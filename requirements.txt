@@ -1,6 +1,5 @@
 streamlit
 matplotlib
-sys
 json
 time
 pandas
