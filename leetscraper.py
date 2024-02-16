@@ -2,12 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import json
-# def get_number_of_contest(number_of_contest):
-#     raw_text = number_of_contest.get_text(strip=True)
-#     print(raw_text)
-#     numeric_part = ''.join(c for c in raw_text if c.isdigit() or c == ',')
-#     numeric_value = int(numeric_part.replace(',', ''))
-#     return numeric_value
 def get_contest_rating(contest_span):
     raw_text = contest_span.get_text(strip=True)
     numeric_part = ''.join(c for c in raw_text if c.isdigit() or c == ',')
@@ -131,8 +125,8 @@ def scrape_leetcode_profile(username):
         print(f"Failed to fetch data for {username}. Status code: {response.status_code}")
         return None
 
-profile_data = scrape_leetcode_profile(input())
+# profile_data = scrape_leetcode_profile()
 
-if profile_data:
-    json_data = json.dumps(profile_data, ensure_ascii=False).replace("'", '"')
-    print(profile_data)
+# if profile_data:
+#     json_data = json.dumps(profile_data, ensure_ascii=False).replace("'", '"')
+#     print(profile_data)

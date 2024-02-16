@@ -40,13 +40,6 @@ def display_profile_details(profile_data, title):
         st.write(f"- Medium: {profile_data['medium_solved']} / {profile_data['medium_total']}")
         st.write(f"- Hard: {profile_data['hard_solved']} / {profile_data['hard_total']}")
 def draw_circle_meter(problems_solved,total_problems, title):
-    # fig, ax = plt.subplots(figsize=(2,2))
-    # sizes = [problems_solved, total_problems - problems_solved]
-    # labels = [f"Solved: {problems_solved}", f"Remaining: {total_problems - problems_solved}"]
-    # colors = ['red', 'gray']
-    # ax.pie(sizes, labels=labels, colors=colors, startangle=90, counterclock=False, wedgeprops=dict(width=0.1))
-    # ax.axis('equal')
-    # ax.set_title(title, loc='center', fontsize=10, pad=20)
     fixed_total_problems = 1000  # Set a fixed value for total problems
     fixed_problems_solved = int(problems_solved / total_problems * fixed_total_problems)
     
