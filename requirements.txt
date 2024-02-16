@@ -1,8 +1,2 @@
 streamlit
 matplotlib
-time
-pandas
-requests
-bs4
-BeautifulSoup
-re
