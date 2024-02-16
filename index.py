@@ -34,11 +34,11 @@ def display_profile_details(profile_data, title):
         st.write(f"**Contests Attended:** {profile_data['contest_attended']}")
         st.write(f"**Contest Rating:** {profile_data['contest_rating']}")
         st.write(f"**Total Problems Solved:** {profile_data['total_problems_solved']}")
-        st.write(f"**Total Problems Submitted:** {profile_data['total_problems']}")
+        st.write(f"**Total Problems:** {profile_data['total_problems']}")
         st.write("#### Problems Solved by Difficulty:")
-        st.write(f"- Easy: {profile_data['easy_solved']} / {profile_data['easy_total']}")
-        st.write(f"- Medium: {profile_data['medium_solved']} / {profile_data['medium_total']}")
-        st.write(f"- Hard: {profile_data['hard_solved']} / {profile_data['hard_total']}")
+        st.write(f"- **Easy**: {profile_data['easy_solved']} / {profile_data['easy_total']}")
+        st.write(f"- **Medium**: {profile_data['medium_solved']} / {profile_data['medium_total']}")
+        st.write(f"- **Hard**: {profile_data['hard_solved']} / {profile_data['hard_total']}")
 def draw_circle_meter(problems_solved,total_problems, title):
     fixed_total_problems = 1000  # Set a fixed value for total problems
     fixed_problems_solved = int(problems_solved / total_problems * fixed_total_problems)
